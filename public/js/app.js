@@ -4,7 +4,7 @@ const search = document.querySelector("input")
 weatherForm.addEventListener('submit', (e)=>{
     e.preventDefault()    
     const location = search.value
-    forecast_url = 'http://localhost:3000/weather?address=' + location
+    forecast_url = '/weather?address=' + location
     const errorResult = document.getElementById("error")
     const forecastResult =  document.getElementById("forecast")
     const locationResult = document.getElementById("location")
